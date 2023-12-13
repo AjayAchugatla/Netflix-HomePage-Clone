@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(./images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.55;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    max-width: 60vw;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    height: 65px;
+}
+
+nav img {
+    width: 120px;
+    margin: -10px 0px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.cont {
+    height: calc(100% - 65px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+    padding: 0 20px;
+    font-family: 'Martel Sans', sans-serif;
+    position: relative;
+}
+
+.sp1 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.sp2,
+.sp3 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 600px)
+{
+    nav
+    {
+        max-width: 90vw;
+    }
+    .sp1{
+        font-size: 1.8rem;
+    }
+    .sp2,.sp3
+    {
+        font-size: 0.8rem;
+    }
+}
+
+.getst
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+}
+.sep {
+    height: 6px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.btn1 {
+    padding: 3px 8px;
+    background-color: rgba(90, 89, 89, 0.389);
+    ;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.btn2 {
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 6px;
+}
+
+.red {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.main input {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid rgba(166, 167, 167, 0.5);
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+}
+
+.layout {
+    color: white;
+    display: flex;
+    margin: auto;
+    gap:20px;
+    max-width: 70vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1120px)
+{
+    .layout
+    {
+        flex-wrap: wrap;
+    }    
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg>img {
+    width: 520px;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg>video {
+    width: 410px;
+    position: absolute;
+    top: 68px;
+    right: 59px;
+}
+
+.sec .sp1
+{
+    font-size: 2.6rem;
+} 
+
+.thi video
+{
+    width: 320px;
+    top: 32px;
+    right: 95px;
+}
+@media screen and (max-width: 600px)
+{
+    .secimg>img {
+        width: 400px;
+    }
+    
+    .secimg>video {
+        width: 280px;
+    }
+    .thi video{
+    width: 250px;
+    right: 70px;  
+    }
+}
+
+.faq
+{
+    padding:34px;
+    color:white;
+    margin: 35px 0;
+}
+
+.faqbox
+{
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 20px;
+    max-width: 60vw;
+    margin : 15px auto;
+    cursor: pointer;
+}
+.faqbox svg
+{
+    padding-top:10px;
+}
+.faqbox:hover
+{
+    background-color: rgb(83, 82, 82);
+}
+
+
+footer
+{
+    font-size:0.9rem;
+    max-width: 60vw;
+    color: grey;
+    margin: 70px auto;
+}
+
+footer a 
+{
+    color: grey;
+}
+.container
+{
+    display: flex;
+    gap:8px;
+    flex-direction: column;
+}
+.grid
+{
+    padding:10px 0;
+    margin:7px 0;
+    gap:40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    
+}
+
+@media screen and (max-width: 1120px)
+{
+    .grid
+    {
+        grid-template-columns: 1fr 1fr;
+    }    
+}
